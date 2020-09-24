@@ -10,13 +10,10 @@ body{
     max-width: 1000px;
 }
 
-
-
 /* utilities */
 .position-relative{
     position: relative;
 }
-
 
 .center{
     position:absolute;
@@ -29,6 +26,11 @@ body{
     display: none;
 }
 
+
+.type{
+    text-align: center;
+    color: white;
+}
 .type h3{
     font-weight: 400;
     margin: 10px 0;
@@ -41,6 +43,7 @@ body{
 
 .type a{
     text-transform: none;
+    color: white;
 
 }
 
@@ -126,6 +129,9 @@ header{
     padding: 30px;
 }
 
+.rent .type{
+    color: black;
+}
 .rent a{
     color: #0472ca;
 }
@@ -187,10 +193,6 @@ header{
 
 }
 
-.ciao{
-    height: 300px;
-}
-
 .segway .type{
     color: white;
     text-align: center;
@@ -200,6 +202,29 @@ header{
     color: white;
 }
 
+/* phone city */
+.phone-city .app{
+    background: #384a5b;
+    background-image: url('../img/helbiz-app.png');
+    background-size: 70%;
+    background-position: bottom center;
+    background-repeat: no-repeat;
+    height: 400px;
+}
+
+.phone-city .type li{
+    display: inline-block;
+    padding: 0 5px;
+}
+
+.phone-city .app,
+.phone-city .find{
+    padding-top: 30px;
+}
+
+.phone-city .app img{
+    height: 250px;
+    }
 
 
 /* MEDIA QUERY */
