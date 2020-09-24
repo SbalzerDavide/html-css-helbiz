@@ -4,7 +4,6 @@ body{
     font-size: 14px;
 }
 
-
 /* layout */
 .container.small{
     max-width: 1000px;
@@ -26,7 +25,37 @@ body{
     display: none;
 }
 
+/* hover su a */
+header a:hover,
+main a:hover{
+    color: rgba(0, 0, 0, 0.5);
+}
 
+main .segway a:hover{
+    color: rgba(255, 0255, 2550, 0.5);
+}
+
+.facebook:hover {
+    color: #4867aa;
+}
+
+.instagram:hover {
+    color: #d72c6c;
+}
+
+.youtube:hover {
+    color: #cd201f;
+}
+
+.twitter:hover {
+    color: #5da9de;
+}
+
+.linkedin:hover {
+    color: #015987;
+}
+
+/* type */
 .type{
     text-align: center;
     color: white;
@@ -44,7 +73,6 @@ body{
 .type a{
     text-transform: none;
     color: white;
-
 }
 
 /* TYPOGRAPHY */
@@ -78,8 +106,6 @@ h4{
     font-weight: 600;
 
 }
-
-
 
 /*************************** header ******************************/
 /* nav */
@@ -145,7 +171,6 @@ header{
     margin-top: 20px;
 }
 
-
 /* segway man */
 .segway-man{
     background-image: url('../img/helbiz-banner.jpg');
@@ -194,7 +219,6 @@ header{
 
 .segway .right-side{
     height: 100%;
-
 }
 
 .segway .type{
@@ -231,7 +255,7 @@ header{
 
 .phone-city .app img{
     height: 250px;
-    }
+}
 
 .phone-city .find{
     background-image: url('../img/cities.jpg');
@@ -305,7 +329,10 @@ footer .map a{
 footer .social-credits{
     padding: 30px 0;
     border-bottom: 1px solid rgba(115, 115, 115, 0.2);
+}
 
+footer .social-credits .footer-social a{
+    font-size: 15px;
 }
 
 footer .social-credits li{
@@ -315,6 +342,10 @@ footer .social-credits li{
 }
 
 footer .social-credits a{
+    color: white;
+}
+
+footer a:hover{
     color: white;
 }
 
@@ -332,23 +363,8 @@ footer .store-app .store img{
 }
 
 
-
-
-
 /* MEDIA QUERY */
-@media screen and (min-width:460px){
-
-    
-    
-}
-
-
-
-
-
-
-
-
+/* dimensione desktop */
 @media screen and (min-width:992px){
     h1{
         font-size: 40px;
@@ -381,7 +397,6 @@ footer .store-app .store img{
         height: 45px;
     }
 
-
     /* rent */
     .padding-lg-right{
         padding-left: 0;
@@ -412,10 +427,4 @@ footer .store-app .store img{
     .opacity{
         background-color: rgba(0, 0, 0, 0);
     }
-
-
-    
-
-    
-
 }
