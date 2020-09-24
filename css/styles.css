@@ -1,21 +1,120 @@
 /* GENERAL */
 body{
     font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+}
+
+
+/* layout */
+.container.small{
+    max-width: 1000px;
+}
+
+
+/* TYPOGRAPHY */
+a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+}
+
+h1{
+    font-size: 30px;
+    font-weight: 600;
 }
 
 
 
-/* TYPOGRAPHY */
+/*************************** header ******************************/
+/* nav */
+header{
+    line-height: 50px;
+    text-align: center;
+}
+ header nav img{
+     vertical-align: middle;
+ }
 
+.menu,
+.languages{
+    display: none;
+}
 
+.hamburger{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
 
+/* jumbotron */
+.jumbotron{
+    height:450px;
+    background-image: url('../img/hero-bg.jpg');
+    background-position: center;
+    background-size: cover;
+}
 
-/* header */
+.jumbotron{
+    position: relative;
+    text-align: center;
+    color: white;
+}
 
+.jumbotron p{
+    margin: 20px 0;
+}
 
+.jumbotron img{
+    height: 30px;
+}
 
-
+.jumbotron .center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
 
 
 
 /* MEDIA QUERY */
+@media screen and (min-width:460px){
+    .jumbotron img{
+        height: 45px;
+    }
+
+    
+    
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:992px){
+    h1{
+        font-size: 40px;
+    }
+    
+    header nav .hamburger{
+        display: none;
+    }
+    .menu,
+    .languages{
+        display: block;
+    }
+    
+    header nav li{
+        display: inline-block;
+        padding: 0 10px;
+    }
+    
+    header nav .languages li{
+        padding: 0 5px;
+    }
+    
+
+}
