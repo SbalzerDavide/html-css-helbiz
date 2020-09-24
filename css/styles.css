@@ -206,10 +206,11 @@ header{
 .phone-city .app{
     background: #384a5b;
     background-image: url('../img/helbiz-app.png');
-    background-size: 70%;
+    background-size: auto 70%;
     background-position: bottom center;
     background-repeat: no-repeat;
     height: 400px;
+    margin-bottom: 30px;
 }
 
 .phone-city .type li{
@@ -220,12 +221,18 @@ header{
 .phone-city .app,
 .phone-city .find{
     padding-top: 30px;
+    margin-bottom: 25px;
 }
 
 .phone-city .app img{
     height: 250px;
     }
 
+.phone-city .find{
+    background-image: url('../img/cities.jpg');
+    background-size: cover;
+    height: 400px;
+}
 
 /* MEDIA QUERY */
 @media screen and (min-width:460px){
@@ -276,6 +283,7 @@ header{
 
     /* rent */
     .padding-lg-right{
+        padding-left: 0;
         padding-right: 20px;
     }
 
