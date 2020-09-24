@@ -11,6 +11,21 @@ body{
 }
 
 
+
+/* utilities */
+.position-relative{
+    position: relative;
+}
+
+
+
+.center{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 /* TYPOGRAPHY */
 a{
     text-decoration: none;
@@ -20,7 +35,23 @@ a{
 
 h1{
     font-size: 30px;
+}
+
+h2{
+    font-size: 25px;
+    line-height: 40px;
+}
+
+h3{
+    font-size: 20px;
+}
+
+h1,
+h2,
+h3,
+h4{
     font-weight: 600;
+
 }
 
 
@@ -45,19 +76,20 @@ header{
     top: 0;
     right: 0;
 }
-
+/***************************** main ********************************/
 /* jumbotron */
 .jumbotron{
     height:450px;
     background-image: url('../img/hero-bg.jpg');
     background-position: center;
     background-size: cover;
-}
-
-.jumbotron{
-    position: relative;
     text-align: center;
     color: white;
+}
+
+.jumbotron .center{
+    width: 100%;
+    padding: 0 10px;
 }
 
 .jumbotron p{
@@ -68,20 +100,33 @@ header{
     height: 30px;
 }
 
-.jumbotron .center{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+/* rent */
+.rent .box{
+    background: #fafafa;
+    margin: 30px 0;
+    text-align: center;
+    padding: 30px;
+}
+
+.rent a{
+    color: #0472ca;
+    text-transform: none;
+}
+
+.rent img{
+    height: 400px;
+    margin-top: 20px;
+}
+
+.rent h3{
+    font-weight: 400;
+    line-height: 50px;
 }
 
 
 
 /* MEDIA QUERY */
 @media screen and (min-width:460px){
-    .jumbotron img{
-        height: 45px;
-    }
 
     
     
@@ -98,7 +143,8 @@ header{
     h1{
         font-size: 40px;
     }
-    
+
+    /* header */
     header nav .hamburger{
         display: none;
     }
@@ -115,6 +161,19 @@ header{
     header nav .languages li{
         padding: 0 5px;
     }
+
+    /* jumbotron */
+    .jumbotron img{
+        height: 45px;
+    }
+
+
+    /* rent */
+    .padding-right{
+        padding-right: 20px;
+    }
+    
+
     
 
 }
