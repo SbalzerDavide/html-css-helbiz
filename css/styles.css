@@ -282,6 +282,11 @@ footer .map{
     border-bottom: 1px solid rgba(115, 115, 115, 0.2);
 }
 
+footer .col-map,
+footer .col-credits{
+    margin: 15px 0;
+}
+
 footer .map h4{
     font-weight: 400;
     text-transform: uppercase;
@@ -311,6 +316,19 @@ footer .social-credits li{
 
 footer .social-credits a{
     color: white;
+}
+
+footer .store-app{
+    margin: 15px 5px 10px;
+}
+footer .store-app .store{
+    display: inline-block;
+    border: 1px solid  rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+
+footer .store-app .store img{
+    height: 40px;
 }
 
 
