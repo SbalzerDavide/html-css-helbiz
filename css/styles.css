@@ -18,12 +18,30 @@ body{
 }
 
 
-
 .center{
     position:absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+}
+
+.only-desktop{
+    display: none;
+}
+
+.type h3{
+    font-weight: 400;
+    margin: 10px 0;
+}
+
+.type p{
+    font-size: 16px;
+    margin: 8px 0;
+}
+
+.type a{
+    text-transform: none;
+
 }
 
 /* TYPOGRAPHY */
@@ -110,7 +128,6 @@ header{
 
 .rent a{
     color: #0472ca;
-    text-transform: none;
 }
 
 .rent img{
@@ -118,9 +135,69 @@ header{
     margin-top: 20px;
 }
 
-.rent h3{
-    font-weight: 400;
-    line-height: 50px;
+
+/* segway man */
+.segway-man{
+    background-image: url('../img/helbiz-banner.jpg');
+    background-size: cover;
+    background-position: left center;
+    height: 450px;
+    margin-bottom: 300px;
+}
+
+.segway-man .left-side,
+.segway-man .right-side{
+    margin-top: 500px;
+    padding: 0 15px;
+}
+
+.segway-man .left-side{
+    text-align: right;
+}
+
+.segway-man .left-side h2{
+    line-height: 35px;
+}
+
+.segway-man .left-side .text{
+    display: inline-block;
+    text-align: left;
+}
+
+.segway-man .right-side h4{
+    margin-top: 20px;
+}
+
+/* segway */
+.segway{
+    height: 400px;
+    background-image: url('../img/scooter-bg.jpg');
+    background-size: cover;
+    margin-bottom: 50px;
+}
+
+.opacity{
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+
+}
+
+.segway .left-side{
+    height: 100%;
+
+}
+
+.ciao{
+    height: 300px;
+}
+
+.segway .type{
+    color: white;
+    text-align: center;
+}
+
+.segway .type a{
+    color: white;
 }
 
 
@@ -142,6 +219,10 @@ header{
 @media screen and (min-width:992px){
     h1{
         font-size: 40px;
+    }
+
+    .only-desktop{
+        display: block;
     }
 
     /* header */
@@ -169,9 +250,36 @@ header{
 
 
     /* rent */
-    .padding-right{
+    .padding-lg-right{
         padding-right: 20px;
     }
+
+    /* segway man */
+    .segway-man{
+        margin-bottom: 400px;
+    }
+    .phone {
+        text-align: center;
+    }
+    
+    .phone img{
+        max-height: 700px;
+        max-width: 100%;
+        margin-top: 200px;
+    }
+
+    .segway-man .left-side,
+    .segway-man .right-side{
+    margin-top: 600px;
+    padding: 0 0;
+    }
+
+    /* segway */
+    .opacity{
+        background-color: rgba(0, 0, 0, 0);
+    }
+
+
     
 
     
